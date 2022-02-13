@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "./index.js",
+            "src": "./Torrent2Drive_server/server.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "./",
-            "dest": "../Torrent2Drive_frontend/dist/index.html"
+            "src": "/(.*)",
+            "dest": "./Torrent2Drive_server/server.js"
         }
     ]
 }
